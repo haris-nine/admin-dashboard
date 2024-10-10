@@ -1,0 +1,270 @@
+* {
+    font-family: "Roboto", serif;
+}
+
+
+html, body {
+    margin: 0;
+    height: 100svh;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+}
+
+/* aside start */
+
+aside {
+    background-color: #1992d4;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#logo {
+    padding: 20px 0px 20px 30px;
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+#logo > img {
+    filter: invert(1);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+li > img {
+    filter: invert(1);
+}
+li:nth-child(7) {
+    margin-top: 40px;
+}
+
+li:hover, li > img:hover {
+    filter:invert(1);
+
+}
+
+/* aside end */
+
+/* header start */
+
+header {
+    background-color: #fff;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.topnav {
+    grid-row: 1/2;
+    display: flex;
+    padding-top: 5px;
+}
+
+.search {
+    padding: 15px 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+input {
+	border: 1px solid #E5E7EB;
+    background-color: #e2e8f0;
+	border-radius: 10px;
+	height: 1.4em;
+	width: 500px;
+    text-indent: 10px;
+    margin-left: 10px;
+
+}
+
+.user {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.bottomnav {
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 20px;
+}
+
+#hi {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#username {
+    font-size: 24px;
+    padding-top: 3px;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons > * {
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    background-color: #1992d4;
+    color: #E5E7EB;
+    padding: 7px 25px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    color:#1992d4;
+    background-color: #E5E7EB;
+}
+
+/* header end */
+
+
+/* main start */
+
+main {
+    background-color: #e2e8f0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 0px 10px 20px;
+    gap: 20px;
+    box-shadow: inset 0px 3px 5px -5px black;
+}
+
+#grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#grids > div {
+    background: white;
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+    border-left: 10px solid #f0b429;
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    margin: 30px 0px 5px 20px;
+}
+
+p {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+}
+
+.icons {
+    align-self: end;
+    display: flex;
+    margin: auto 30px 20px auto;
+    gap: 25px;
+}
+
+.side {
+    margin: 0 20px;
+}
+
+#announcements {
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    display: grid;
+}
+
+.cards {
+    display: grid;
+    grid-row: 1fr 1fr; 
+}
+
+.card {
+    padding: 10px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.card:first-child {
+    padding-top: 0;
+}
+
+.card:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.card > h4,.card > p {
+    margin: 0;
+    padding: 0;
+}
+
+.profiles {
+        width: auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.profile {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile > img {
+    padding-right: 5px;
+}
+
+.profile > div > div {
+    font-weight: 400;
+}
+
+/* main end */
